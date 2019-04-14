@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Responsive Grid</title>
+
+    <style>
+        #jumbo {
+          background-image: url("images/main.jpeg");
+          background-size: cover;
+        }
+        .center{
+width: 150px;
+  margin: 40px ;
+  
+}
+.center2{
+width: 150px;
+  margin: 40px ;
+  
+}
+.img-fluid {
+  max-width: 10%;
+  height: auto;
+  left:40%;
+}
+.tales {
+  width: 500px;
+  height: 300px;
+  
+}
+.tabla{
+    width:50%;
+    height:50%
+}
+        </style>
+</head>
+
+
+<body>
+
+    <div id="jumbo" class="jumbotron jumbotron-fluid  ">
+            <nav class=" navbar bg-transparent navbar-expand-lg navbar-dark fixed-top bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                      <a class="navbar-brand" href="#">Aurora Grove</a>
+                      <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item ">
+                          <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link " href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link " href="#">Book</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link " href="#">Explore</a>
+                              </li>     
+                      </ul>
+                    
+                    </div>
+                  </nav>
+        <h1 class="h3 text-light text-center ">Modern Camping</h1>
+       <h1 class="display-3 text-light text-center ">AURORA GROVE</h1>
+        <p class="lead text-light text-center ">This is a simple hero unit, a simple jumbotron-style component.</p>
+        <div class="text-center">
+        <button type="button" class="btn btn-pill btn-info" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Book Now
+
+        </button>
+    </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Booking</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <hr class="my-4">
+      <p>Fill this form before it is too late</p>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email" class=" col-form-label">Email Address:</label>
+            <input type="email" class="form-control" placeholder="name@example.com" id="email">
+          </div>
+          <div class="center">
+              <div class="form-group">
+                  <label for="incault" class="col-form-label">Number of Adults:</label>
+                <div class="input-group">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-minus">-</span>
+                          </button>
+                      </span>
+                      <input id="incault" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-plus">+</span>
+                          </button>
+                      </span>
+                  </div>
+                </div>
+               
+            </div>
+            <div class="center2">
+                    <div class="form-group">
+                        <label for="incC" class="col-form-label">Number of Children:</label>
+                      <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-minus">-</span>
+                                </button>
+                            </span>
+                            <input id="incC" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    <span class="glyphicon glyphicon-plus">+</span>
+                                </button>
+                            </span>
+                        </div>
+                      </div>
+                     
+                  </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+    <!-- End of Jumbotron(PArt-1) -->
+    <!-- Starting part to (Card)-->
+    <div class="container">
+        <h1 class="text-center">Tou show up,We Pitch the Tent</h1>
+            <div class="row">
+              <div class="col-sm">
+                    <div class="" >
+                            <img class="card-img-top" src="images/icons/campfire.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title text-center ">Amenities You Want</h5>
+                              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+              </div>
+              <div class="col-sm">
+                    <div class="" >
+                            <img class="card-img-top" src="images/icons/nature.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title text-center ">Food You Crave</h5>
+                              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+            </div>
+              <div class="col-sm">
+                    <div class="" >
+                            <img class="card-img-top" src="images/icons/tent.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title text-center ">Nature You Need</h5>
+                              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+              </div>
+            </div>
+          </div>
+    <!-- End of Part-2  -->
+    <!-- Starting PArt three Cards(ii)-->
+    <div class="container">
+        <h2 class="text-center">We have Created a Camping experience which u can see never before </h1>
+            <div class="row">
+              <div class="col-sm">
+                    <div class="card text-center" >
+                            <img class="card-img-top" src="images/dogs.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h3 class="card-title text-center text-info">Card title</h3>
+                              <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                            
+                              <a href="#" class="btn btn-outline-info ">Go somewhere</a>
+                            </div>
+                          </div>
+              </div>
+              <div class="col-sm">
+                    <div class="card text-center" >
+                            <img class="card-img-top" src="images/winter.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h3 class="card-title text-info">Card title</h3>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-outline-info">Go somewhere</a>
+                            </div>
+                          </div>
+              </div>
+            </div>
+          </div>
+     
+     <!-- End of Part-3  -->
+    <!-- start of Part-4 Quotes using grid -->
+    <div class="container">
+            <h1 class="text-center">Tou show up,We Pitch the Tent</h1>
+                <div class="row">
+                  <div class="col-sm">
+                        <div class="" >
+                                <img  class="img-fluid card-img-top" src="https://smallimg.pngkey.com/png/small/84-843648_closed-quotation-mark-quotation-mark.png" alt="Card image cap">
+                                <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                              </blockquote>
+                                </div>
+                              </div>
+                  </div>
+                  <div class="col-sm">
+                        <div class="" >
+                                <img  class="img-fluid card-img-top" src="https://smallimg.pngkey.com/png/small/84-843648_closed-quotation-mark-quotation-mark.png" alt="Card image cap">
+                                <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                              </blockquote>
+                                </div>
+                              </div>
+                </div>
+                  <div class="col-sm">
+                        <div class="" >
+                                <img  class="img-fluid card-img-top" src="https://smallimg.pngkey.com/png/small/84-843648_closed-quotation-mark-quotation-mark.png" alt="Card image cap">
+                                <div class="card-body">
+                                        <blockquote class="blockquote text-center">
+                                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                              </blockquote>
+                                </div>
+                              </div>
+                  </div>
+                </div>
+              </div>
+    <!-- End of forth part  -->
+            <!-- part 5 Slide show begin -->
+            <div class="container">
+                    <div class="row">
+                      <div class="col-7">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner tales ">
+                                      <div class="carousel-item active">
+                                        <img class="d-block w-100" src="images/slider/caribou.png" alt="First slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/slider/coffee.png" alt="Second slide">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img class="d-block w-100" src="images/slider/fire.png" alt="Third slide">
+                                      </div>
+                                    </div>
+                                  </div>
+                      </div>
+                      <div class="col-5">
+                        <h1>Camping Made Easy</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores corrupti dolor totam sequi sunt vero esse itaque perspiciatis fugit. Libero, consectetur animi quasi corrupti praesentium veniam alias id nobis voluptas!</p>
+                        <button type="button" class="btn btn-link">To the next</button>
+
+                    </div>
+                    </div>
+                  </div>
+                      <!-- End of forth part  -->
+                      <!--part 5  Photo Grid  -->
+                      <div class="container">
+                          <h3 class="text-center">What other are saying!</h3>
+                            <div class="row">
+                              <div class="col-3">
+                                    <img  class="tabla" src="images/gallery/social1.png" alt="Card image cap"></div>
+                              <div class="col-3">
+                                    <img  class="tabla" src="images/gallery/social2.png" alt="Card image cap"></div>
+
+                              </div>
+                              <div class="col-3">
+                                    <img  class="tabla" src="images/gallery/social3.png" alt="Card image cap"></div>
+                                </div>
+                            </div>
+                            
+                          </div>
+                          
+
+
+
+
+                      
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script>
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+</script>
+
+    </body>
+
+</html>
